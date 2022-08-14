@@ -168,7 +168,6 @@ int main(int argc, char **argv) {
     setProgressData("waiting", 1);
     if (dump_progress)
         printProgress(0.5);
-    printf("> Please plug in the device");
     if (timeout > 0)
         printf(" (will time out in %d seconds)", timeout);
     printf(" ... \n");
@@ -361,7 +360,7 @@ int main(int argc, char **argv) {
             printProgress(1.0);
         }
     }
-    printf(">> Micronucleus done. Thank you!\n");
+    printf("[*] Compiling completed");
 
     return EXIT_SUCCESS;
 }
