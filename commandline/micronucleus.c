@@ -36,7 +36,7 @@
 #define FILE_TYPE_INTEL_HEX 1
 #define FILE_TYPE_RAW 2
 #define CONNECT_WAIT 250 /* milliseconds to wait after detecting device on usb bus - probably excessive */
-
+#define GREEN "\e[0;32m"
 /******************************************************************************
  * Global definitions
  ******************************************************************************/
@@ -360,7 +360,7 @@ int main(int argc, char **argv) {
             printProgress(1.0);
         }
     }
-    printf("[*] Compiling completed");
+    printf(GREEN "[*] Compiling completed" reset);
 
     return EXIT_SUCCESS;
 }
